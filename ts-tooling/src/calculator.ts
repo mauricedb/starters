@@ -6,7 +6,7 @@ export class Calculator {
   add(x: number, y: number): number {
     const sum = x + y;
     
-    this.logger(`${x} + ${y} = ${sum}`);
+    this.logger(`Log: ${x} + ${y} = ${sum}`);
 
     return sum;
   }
