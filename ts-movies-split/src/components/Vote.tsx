@@ -8,7 +8,7 @@ export function Vote({ average, count, max }: Props) {
   return (
     <p>
       Votes:&nbsp;
-      {'★'.repeat(average).padEnd(max, '☆')}
+      {'★'.repeat(Math.min(average, max)).padEnd(max, '☆')}
       &nbsp;({count.toLocaleString()})
     </p>
   );
